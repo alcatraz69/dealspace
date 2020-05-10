@@ -20,12 +20,6 @@ function Startupcard(props) {
         </div>
       </div>
     </div>
-
-    //      <div className="card" >
-    //     <img src="#" alt="Alps">
-    //     <div className="w3-container w3-center">
-    //     <p>The Italian / Austrian Alps</p>
-    //   </div>
   );
 }
 
