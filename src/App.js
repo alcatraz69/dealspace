@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
-import Header from "./compnents/Header";
-import Searchbar from "./compnents/Searchbar";
-import Section1 from "./compnents/Section1";
+import Header from "./compnents/header/Header";
+import Searchbar from "./compnents/Searchbar/Searchbar";
+import Section1 from "./compnents/Section1/Section1";
 
 function App() {
   return (

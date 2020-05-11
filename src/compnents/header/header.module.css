@@ -1,0 +1,19 @@
+.nav {
+  background-color: #10389b;
+  /*#f5ba13*/
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+}
+
+.nav h1 {
+  color: #fff;
+  font-family: sans-serif;
+  position: absolute;
+  left: 1.39%;
+  right: 85.67%;
+  top: 0.89%;
+  bottom: 98.22%;
+}

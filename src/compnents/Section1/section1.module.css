@@ -1,0 +1,40 @@
+.section1_container {
+  position: absolute;
+  width: 1032px;
+  left: 82px;
+  top: 262px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+}
+
+.section1_container h3 {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  line-height: 64px;
+  margin-bottom: 40px;
+}
+
+.section1_container h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.fa-angle-double-up {
+  position: absolute;
+  width: 20px;
+  left: 95.21%;
+  top: 8.85%;
+  bottom: 88.74%;
+  color: #00bcd4;
+}
+
+.Loading {
+  border: 10px transparent green;
+  padding: 80px;
+  color: rgb(31, 96, 194);
+  font-weight: 500;
+  font-size: large;
+}

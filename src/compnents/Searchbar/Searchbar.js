@@ -1,4 +1,5 @@
 import React from "react";
+import "./searchbar.module.css";
 function Searchbar() {
   return (
     <div>
