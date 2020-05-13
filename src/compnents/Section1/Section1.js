@@ -41,14 +41,12 @@ function Section1() {
       );
     })
   ) : (
-      <div className={styles.Loading}>Loading...</div>
-    );
+    <div className={styles.Loading}>Loading...</div>
+  );
 
   return (
     <div className={styles.section1_container}>
-      <h3 className={styles.sec_title}>
-        Trending Startups <i fa fa-angle-double-up></i>
-      </h3>
+      <h3 className={styles.sec_title}>Trending Startups</h3>
 
       <Slider {...settings}>{startuplist}</Slider>
     </div>

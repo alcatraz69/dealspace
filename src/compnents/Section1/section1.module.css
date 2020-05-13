@@ -1,8 +1,9 @@
 .section1_container {
-  position: absolute;
+  position: relative;
   width: 1032px;
   left: 82px;
   top: 262px;
+  margin-bottom: 30px;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 20px;
 }

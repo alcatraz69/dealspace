@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./compnents/header/Header";
 import Searchbar from "./compnents/Searchbar/Searchbar";
 import Section1 from "./compnents/Section1/Section1";
+import Form from "./compnents/Form/Form";
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
       <Header />
       <Searchbar />
       <Section1 />
+      <Section1 />
+      <Form />
     </div>
   );
 }

@@ -1,0 +1,144 @@
+.section_container {
+  position: relative;
+  width: 1032px;
+  left: 82px;
+  top: 262px;
+  padding-bottom: 22px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+}
+
+.section_container h3 {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  line-height: 64px;
+  margin-bottom: 40px;
+}
+
+.form_sec {
+  position: relative;
+  width: 900px;
+  height: 500px;
+  left: 72px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+table {
+  position: absolute;
+  top: 27px;
+  left: 70px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 85%;
+  border: 1px solid #fff;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.myList {
+  position: relative;
+  width: 466px;
+  height: 30px;
+  left: 58px;
+  border: 1px solid #303f9f;
+  border-radius: 2px;
+}
+
+.input1 {
+  position: absolute;
+  width: 462px;
+  height: 30px;
+  left: 280px;
+  top: 10px;
+  background-color: #ffffff;
+  /* border-radius: 0; */
+  border: 1px solid #303f9f;
+  border-radius: 2px;
+}
+
+.switch_txt {
+  position: relative;
+  top: 400px;
+  left: 250px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  top: 360px;
+  left: 530px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 39px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 22px;
+  left: 2px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.submit {
+  position: absolute;
+  width: 150px;
+  height: 33px;
+  left: 327px;
+  top: 445px;
+  color: #fff;
+  background-color: #10389b;
+  border-radius: 20px;
+  border: none;
+  letter-spacing: 1.5px;
+}
