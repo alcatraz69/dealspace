@@ -2,12 +2,11 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Startupcard from "../Startupcard/Startupcard";
 import styles from "./section1.module.css";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-function Section1() {
+function Section1(props) {
   const [startups, setStartups] = useState([]);
 
   useEffect(() => {
@@ -30,10 +29,17 @@ function Section1() {
 
   let startuplist = startups.length ? (
     startups.map((startup) => {
+      let url;
+
+      if (props.video === "false") {
+        url = startup.img;
+      } else {
+        url = startup.video;
+      }
       return (
         <Startupcard
           key={startup.id}
-          img={startup.img}
+          img={url}
           name={startup.name}
           views={startup.views}
           description={startup.description}
@@ -46,7 +52,7 @@ function Section1() {
 
   return (
     <div className={styles.section1_container}>
-      <h3 className={styles.sec_title}>Trending Startups</h3>
+      <h3 className={styles.sec_title}>{props.title}</h3>
 
       <Slider {...settings}>{startuplist}</Slider>
     </div>

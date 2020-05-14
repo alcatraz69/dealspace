@@ -10,8 +10,8 @@ function App() {
     <div className="App">
       <Header />
       <Searchbar />
-      <Section1 />
-      <Section1 />
+      <Section1 video="false" title="Trending Startups" />
+      <Section1 video="true" title="1-min Video Startup Pitches" />
       <Form />
     </div>
   );

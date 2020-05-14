@@ -8,7 +8,20 @@ import styles from "./startupcard.module.css";
 function Startupcard(props) {
   return (
     <div className={styles.card}>
-      <img src={props.img} alt="" />
+      {/* <img src={props.img} alt="" /> */}
+
+      <iframe
+        className={styles.iframe}
+        title="startup"
+        width="257.5"
+        height="176"
+        src={props.img}
+        frameborder="0"
+        scrolling="no"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
       <div className={styles.card_details}>
         <h2>{props.name}</h2>
         <p className={styles.grey}>
