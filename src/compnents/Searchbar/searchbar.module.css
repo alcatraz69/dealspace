@@ -14,3 +14,16 @@ input::placeholder {
   font-size: 18px;
   color: black;
 }
+
+@media all and (max-width: 670px) {
+  input {
+    position: absolute;
+    width: 354px;
+    height: 40px;
+    left: 3px;
+    top: 130px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: transparent;
+  }
+}

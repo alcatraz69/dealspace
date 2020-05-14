@@ -23,6 +23,15 @@
   font-weight: 400;
 }
 
+.slick-prev:before,
+.slick-next:before {
+  font-size: 28px;
+  line-height: 1;
+  opacity: 0.75;
+  color: red;
+  -webkit-font-smoothing: antialiased;
+}
+
 .fa-angle-double-up {
   position: absolute;
   width: 20px;
@@ -38,4 +47,16 @@
   color: rgb(31, 96, 194);
   font-weight: 500;
   font-size: large;
+}
+
+@media all and (max-width: 670px) {
+  .section1_container {
+    position: relative;
+    width: 360px;
+    left: -4px;
+    top: 200px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+  }
 }

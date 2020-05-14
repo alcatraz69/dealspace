@@ -142,3 +142,64 @@ input:checked + .slider:before {
   border: none;
   letter-spacing: 1.5px;
 }
+
+@media all and (max-width: 670px) {
+  .section_container {
+    position: relative;
+    width: 360px;
+    left: -4px;
+    top: 262px;
+    padding-bottom: 22px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+  }
+
+  .form_sec {
+    position: relative;
+    width: 355px;
+    height: 515px;
+    left: 2px;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+
+  table {
+    display: none;
+    /* position: absolute;
+    top: 27px;
+    left: 70px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 25%;
+    border: 1px solid #fff; */
+  }
+
+  .switch_txt {
+    position: relative;
+    top: 400px;
+    left: 62px;
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    top: 388px;
+    left: 158px;
+  }
+
+  .submit {
+    position: absolute;
+    width: 150px;
+    height: 33px;
+    left: 105px;
+    top: 468px;
+    color: #fff;
+    background-color: #10389b;
+    border-radius: 20px;
+    border: none;
+    letter-spacing: 1.5px;
+  }
+}

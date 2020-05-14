@@ -6,6 +6,34 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, left: "325px", display: "block", color: "red" }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        left: "14px",
+        display: "block",
+        fontSize: "24px",
+        color: "green",
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
 function Section1(props) {
   const [startups, setStartups] = useState([]);
 
@@ -25,6 +53,35 @@ function Section1(props) {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          nextArrow: <SampleNextArrow />,
+          prevArrow: <SamplePrevArrow />,
+        },
+      },
+    ],
   };
 
   let startuplist = startups.length ? (
