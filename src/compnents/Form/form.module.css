@@ -150,6 +150,7 @@ input:checked + .slider:before {
 @media all and (max-width: 670px) {
   .section_container {
     position: relative;
+    overflow-x: hidden;
     width: 360px;
     left: -4px;
     top: 208px;

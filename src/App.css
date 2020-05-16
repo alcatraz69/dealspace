@@ -2,14 +2,3 @@ body {
   background-color: #dadada;
   font-family: "Roboto", sans-serif;
 }
-
-/* @media all and (max-width: 670px) {
-  .input {
-    width: 100%;
-    background-color: tomato;
-  }
-
-  .card {
-    width: 100%;
-  }
-} */
