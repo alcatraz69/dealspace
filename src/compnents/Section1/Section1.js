@@ -5,13 +5,29 @@ import styles from "./section1.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import styled from "styled-components";
+
+const HomeWrapper = styled.div`
+  .slick-prev:before {
+    color: black;
+    font-size: 22px;
+  }
+  .slick-next:before {
+    color: black;
+    font-size: 22px;
+  }
+`;
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
       className={className}
-      style={{ ...style, left: "325px", display: "block", color: "red" }}
+      style={{
+        ...style,
+        left: "325px",
+        display: "block",
+      }}
       onClick={onClick}
     />
   );
@@ -26,8 +42,7 @@ function SamplePrevArrow(props) {
         ...style,
         left: "14px",
         display: "block",
-        fontSize: "24px",
-        color: "green",
+        fontSize: "22px",
       }}
       onClick={onClick}
     />
@@ -49,6 +64,7 @@ function Section1(props) {
 
   var settings = {
     dots: false,
+    arrows: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -108,11 +124,13 @@ function Section1(props) {
   );
 
   return (
-    <div className={styles.section1_container}>
-      <h3 className={styles.sec_title}>{props.title}</h3>
+    <HomeWrapper>
+      <div className={styles.section1_container}>
+        <h3 className={styles.sec_title}>{props.title}</h3>
 
-      <Slider {...settings}>{startuplist}</Slider>
-    </div>
+        <Slider {...settings}>{startuplist}</Slider>
+      </div>
+    </HomeWrapper>
   );
 }
 

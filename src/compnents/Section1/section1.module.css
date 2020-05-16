@@ -23,15 +23,6 @@
   font-weight: 400;
 }
 
-.slick-prev:before,
-.slick-next:before {
-  font-size: 28px;
-  line-height: 1;
-  opacity: 0.75;
-  color: red;
-  -webkit-font-smoothing: antialiased;
-}
-
 .fa-angle-double-up {
   position: absolute;
   width: 20px;

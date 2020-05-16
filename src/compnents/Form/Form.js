@@ -46,6 +46,23 @@ function Form() {
             </td>
           </tr>
         </table>
+        <div className={styles.mobile_form}>
+          <p>Card Title :</p>
+          <input
+            className={styles.input1}
+            type="text"
+            placeholder="text"
+          ></input>
+          <p className={styles.p1}>Filter Companies by :</p>
+          <p>Sector :</p>
+          <Dropdown />
+          <p>Industry :</p>
+          <Dropdown />
+          <p>Categories :</p>
+          <Dropdown />
+          <p>Tags :</p>
+          <Dropdown />
+        </div>
         <div>
           <p className={styles.switch_txt}>Show 1-min Video Startup Pitches</p>
           <label className={styles.switch}>
