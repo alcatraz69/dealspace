@@ -15,7 +15,20 @@ input::placeholder {
   color: black;
 }
 
-@media all and (max-width: 670px) {
+@media all and (max-width: 760px) {
+  input {
+    position: absolute;
+    width: 660px;
+    height: 65px;
+    left: 52px;
+    top: 130px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: transparent;
+  }
+}
+
+@media all and (max-width: 600px) {
   input {
     position: absolute;
     width: 354px;

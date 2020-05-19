@@ -40,7 +40,19 @@
   font-size: large;
 }
 
-@media all and (max-width: 670px) {
+@media all and (max-width: 760px) {
+  .section1_container {
+    position: relative;
+    width: 660px;
+    left: 46px;
+    top: 250px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+  }
+}
+
+@media all and (max-width: 600px) {
   .section1_container {
     position: relative;
     width: 360px;

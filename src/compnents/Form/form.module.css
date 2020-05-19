@@ -147,7 +147,84 @@ input:checked + .slider:before {
   letter-spacing: 1.5px;
 }
 
-@media all and (max-width: 670px) {
+@media all and (max-width: 760px) {
+  .section_container {
+    position: relative;
+    overflow-x: hidden;
+    width: 660px;
+    left: 46px;
+    top: 260px;
+    padding-bottom: 22px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+  }
+
+  .form_sec {
+    position: relative;
+    width: 646px;
+    height: 620px;
+    left: 7px;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+
+  table {
+    display: none;
+  }
+
+  .mobile_form {
+    display: inline-block;
+    padding-left: 38px;
+    padding-top: 20px;
+  }
+
+  .input1 {
+    position: relative;
+    width: 271px;
+    height: 26px;
+    left: 58px;
+    top: -2px;
+    background-color: #ffffff;
+    /* border-radius: 0; */
+    border: 1px solid #303f9f;
+    border-radius: 2px;
+  }
+
+  .p1 {
+    font-weight: 500;
+  }
+
+  .switch_txt {
+    position: relative;
+    top: 14px;
+    left: 206px;
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    top: 6px;
+    left: 295px;
+  }
+
+  .submit {
+    position: absolute;
+    width: 150px;
+    height: 33px;
+    left: 242px;
+    top: 560px;
+    color: #fff;
+    background-color: #10389b;
+    border-radius: 20px;
+    border: none;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media all and (max-width: 600px) {
   .section_container {
     position: relative;
     overflow-x: hidden;

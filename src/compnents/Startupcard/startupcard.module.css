@@ -36,7 +36,23 @@
   margin-bottom: 12px;
 }
 
-@media all and (max-width: 670px) {
+@media all and (max-width: 760px) {
+  .card {
+    position: relative;
+    display: inline-block;
+    width: min-content;
+    height: 75%;
+    width: 78%;
+    border-radius: 15px;
+    background-color: white;
+    margin: 0 38px 26px 45px;
+    text-align: center;
+    box-shadow: 0 0 6px #9c9c9c;
+    cursor: pointer;
+  }
+}
+
+@media all and (max-width: 600px) {
   .card {
     position: relative;
     display: inline-block;
